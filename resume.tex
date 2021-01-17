@@ -1,0 +1,181 @@
+%-------------------------
+% Resume in Latex
+% Author : Pritilata Saha
+% Based off of: https://github.com/jakeryang/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+%\usepackage{fontspec}
+\usepackage{fontawesome}
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+% Redefinition, symbol included in link:
+%\let\orighref\href
+%\renewcommand{\href}[2]{\orighref{#1}{#2\,\faExternalLink}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+
+\begin{center}
+    \textbf{\Huge \scshape Pritilata Saha} \\ \vspace{1pt}
+    \small \faPhone \textbf{ +49-1573-7857375} $|$ \href{mailto:psaha@mail.uni-paderborn.de}{\Letter \textbf{ psaha@mail.uni-paderborn.de}} \\
+    \href{https://linkedin.com/in/pritilata-saha}{ \faLinkedinSquare \textbf{ Pritilata Saha}} $|$
+    \href{https://github.com/Pritilata95}{\faGithub \textbf{ Pritilata Saha}} $|$
+    \href{https://latasaha.com}{\faGlobe \textbf{ Pritilata Saha}} $|$
+    \href{https://scholar.google.com/citations?user=7CWGYEkAAAAJ}{\faGraduationCap \textbf{ Pritilata Saha}} \\
+    \emph{Interests - }
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Universität Paderborn}{Paderborn, Germany}
+      {Master of Science in Computer Science}{Oct. 2020 -- Present}
+    \resumeSubheading
+      {Maulana Abul Kalam Azad University of Technology}{Kolkata, India}
+      {Bachelor of Technology in Computer Science \& Engineering}{Aug. 2014 -- May 2018}
+    \resumeSubheading
+      {Board of Intermediate and Secondary Education, Jashore}{Khulna, Bangladesh}
+      {Secondary and Intermediate Education in Science}{Oct. 2020 -- May 2017}
+  \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Research Intern}{May 2020 -- June 2020}
+      {Institute of Engineering \& Management}{Kolkata, India}
+      
+
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\href{https://github.com/Pritilata95/SimpleFactChecker}{\textbf{Simple Fact Checker} $|$ \emph{Java, MediaWiki API, CoreNLP, Git} \faExternalLink}}{November 2020 -- Present}
+
+      \resumeProjectHeading
+          {\href{https://github.com/AbhirupSinha/HousingPricePredictor}{\textbf{Housing Price Predictor} $|$ \emph{Python, Flask, HTML, CSS} \faExternalLink}}{April 2018 -- May 2018}
+        
+    \resumeSubHeadingListEnd
+
+%-----------PUBLICATIONS-----------
+\section{Publications}
+ \begin{enumerate}
+    \small{\item{\href{}
+     {\textbf{Indian Premier League Player Selection Model based on Indian Domestic League Performance} \\
+     {Amlan Ghosh, Abhirup Sinha, Pritam Mondal, Anusree Roy, Pritilata Saha} \\
+     \emph{2021 IEEE 11th Annual Computing and Communication Workshop and Conference (CCWC)} \\ 
+     \textbf{ACCEPTED FOR PRESENTATION}}
+    }\item{\href{https://ieeexplore.ieee.org/abstract/document/9290569}
+     {\textbf{A Novel Regression based Technique for Batsman Evaluation in the Indian Premier League} \\
+     {Arnab Santra, Abhirup Sinha, Pritilata Saha, Amit Kumar Das} \\
+     \emph{2020 IEEE 1st International Conference for Convergence in Engineering (ICCE)}}
+    }}
+ \end{enumerate}
+
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: Java, Python, C, SQL (MySQL), HTML/CSS} \\
+     \textbf{Frameworks}{: Flask, WordPress} \\
+     \textbf{Developer Tools}{: Git, Eclipse, NetBeans} \\
+     \textbf{Libraries}{: CoreNLP}
+    }}
+ \end{itemize}
+
+
+%-------------------------------------------
+\end{document}
